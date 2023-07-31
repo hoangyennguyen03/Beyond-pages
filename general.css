@@ -116,20 +116,9 @@ h2:hover{
 .map-container {
     flex-basis: 40%; 
     margin-left: 20px; 
-    border-radius: 3px;
-}
-
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-    .video-map-container {
-        flex-wrap: wrap;
-    }
-    .video-container,
-    .map-container {
-        flex-basis: 100%;
-        margin-left: 0;
-        margin-bottom: 20px; 
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Style breadcrumbs */
