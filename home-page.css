@@ -1,0 +1,178 @@
+/* To set the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFDFB;
+    padding: 10px;
+}
+
+.logo img {
+    width: 35%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; 
+}
+
+.menu li {
+    margin-right: 30px;
+    position: relative; 
+}
+
+.menu li::after {
+    content: "|"; 
+    position: absolute;
+    top: 50%;
+    right: -15px; 
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.menu li:last-child::after {
+    content: "";
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: #729068;
+}
+
+.actions button {
+    background-color: #fff;
+    padding: 8px 12px;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.actions button:first-child {
+    margin-left: 0;
+}
+
+.actions button:hover {
+    background-color: #729068; 
+    color:#FFFFCC ;
+    transform: scale(1.1);
+}
+
+/* Apply styles for video*/
+.video-head {
+    width: 75%;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* Category Section */
+.category {
+    margin: 40px 0;
+}
+
+.category h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.category h2 a:hover{
+    color:#729068;
+}
+
+.book-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.book {
+    flex-basis: calc(33.33% - 20px);
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #729068;
+}
+
+.book img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book-details {
+    margin-top: auto;
+}
+
+.book-details .Cover-book {
+    color: rgb(240, 112, 112);
+}
+
+.book-details .book-name{
+    font-family:'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.book-details .author-name {
+    color:#cbc6ae;
+}
+
+/* Vertical header nav bar for mobile devices */
+@media screen and (max-width: 767px) {
+    .menu {
+        text-align: center; /* Center the menu items */
+    }
+    .menu ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Horizontal header nav bar for desktop devices */
+@media screen and (min-width: 768px) {
+    .menu {
+        float: right; /* Float the menu to the right */
+    }
+    .menu ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .menu li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+}
+
+/* Resizing header logo for small mobile screens */
+@media screen and (max-width: 480px) {
+    .header-home .logo img {
+        width: 120px;
+    }
+}

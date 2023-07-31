@@ -1,0 +1,131 @@
+/* Deal Section */
+.Deal-books {
+    padding: 40px 20px;
+}
+
+.Deal-books h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.book-container {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.book-container h2 {
+    background-color: #729068;
+}
+
+.book {
+    flex-basis: calc(50% - 300px);
+    background-color: #fff;
+    padding: 3px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.salebook-details p {
+    margin: 0;
+}
+
+.salebook-details .Cover-book {
+    color: #ff5e15;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.salebook-details .book-name {
+    font-size: 18px;
+    font-weight: bold;
+    color:#729068;
+}
+
+.salebook-details .author-name {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.salebook-details p:last-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E3A5F;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th {
+    font-weight: normal;
+    font-size: 18px;
+    color: #1E3A5F;
+    padding: 5px;
+    text-align: center;
+}
+
+table td {
+    font-size: 14px;
+    color: #555;
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.Deal-books .book:nth-child(2n) {
+    margin-right: 0;
+}
+
+.price {
+    position: relative;
+    margin-top: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.new-price {
+    color: #ff5e15;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.discount {
+    position: absolute;
+    top: 0;
+}  
+
+.book-container{
+    justify-content: space-between;
+}
+
+/* Apply transition to book images */
+.book img {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+}
+
+/* Add a scale effect on hover */
+.book img:hover {
+    transform: scale(1.1);
+}

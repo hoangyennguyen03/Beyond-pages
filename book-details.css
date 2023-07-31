@@ -1,0 +1,123 @@
+/* Main Content Styles */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-star;
+    flex-wrap: wrap; 
+  }
+  
+  .book-images {
+    flex-basis: 55%;
+    display: flex;
+    flex-wrap: wrap; /* Wrap the book images on smaller screens */
+    justify-content: space-between;
+  }
+  
+  .large-image {
+    flex-basis: 45%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+  
+  .large-image img {
+    width: 100%;
+    display: block;
+  }
+  
+  .small-images {
+    flex-basis: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  
+  .small-images img {
+    width: 70%;
+    display: block;
+    border: 2px solid #729068;
+    border-radius: 5px;
+  }
+  
+  
+  .book-details {
+    flex-basis: 35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .book-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .book-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #729068;
+    margin-bottom: 15px;
+  }
+  
+  .add-to-cart {
+    background-color: #729068;
+    color: #FFFFCC;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .add-to-cart:hover{
+    background-color: #729068;
+    color: #FFFFCC;
+  }
+  
+  /* Book Description Styles */
+  .book-description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .main {
+      flex-wrap: wrap;
+    }
+  
+    .book-images {
+      flex-basis: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+  
+    .small-images {
+      flex-basis: calc(50% - 10px);
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  
+    .book-details {
+      flex-basis: 100%;
+      margin-top: 20px;
+    }
+
+    
+    .small-images img {
+    width: 30%;
+    max-height: none;
+    margin-top: 10px; /* Add some spacing between the small images */
+  }
+  }
+  

@@ -1,0 +1,161 @@
+/*Set the body style*/
+body{
+    background-color: #FFFDFB;
+}
+
+/*Set the a style*/
+a{
+    text-decoration: none;
+    color:black; 
+}
+
+a:active {
+    color: green; 
+}
+
+a:hover{
+    color:#729068;
+}
+
+/*Set the heading style*/
+h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+h2:hover{
+    color: #729068;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #729068;
+    color: white;
+    padding: 20px 0;
+    border-radius: 2px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-nav li {
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    color: #FFFFCC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a:hover{
+    border: 1px solid  #FFFFCC;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.footer-social img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color:#FFFFCC
+}
+
+/* Flexbox styles for the video and map containers */
+.video-map-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Apply styles to the video container */
+.video-container {
+    flex-basis: 60%; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply styles to the video element */
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Add a subtle border to the video */
+.video {
+    border: 1px solid #ccc;
+}
+
+/* Apply styles to the map container */
+.map-container {
+    flex-basis: 40%; 
+    margin-left: 20px; 
+    border-radius: 3px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .video-map-container {
+        flex-wrap: wrap;
+    }
+    .video-container,
+    .map-container {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-bottom: 20px; 
+    }
+}
+
+/* Style breadcrumbs */
+.breadcr {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    list-style: none;
+  }
+  
+  .breadcr li {
+    display: inline-block;
+    color: #293D48;
+
+  }
+  
+  .breadcr li a {
+    color: #293D48;
+    text-decoration: none;
+  }
+  .breadcr li:last-child a {
+    text-decoration: underline;
+}
+
+  .breadcr li:not(:last-child):after {
+    content: ">";
+    margin: 0 5px 0 12px;
+    color: #293D48;
+  }
