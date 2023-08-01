@@ -3,10 +3,12 @@ body{
     background-color: #FFFDFB;
 }
 
+
 /*Set the a style*/
 a{
     text-decoration: none;
     color:black; 
+    text-align: center;
 }
 
 a:active {
@@ -83,6 +85,22 @@ h2:hover{
     color:#FFFFCC
 }
 
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+    }
+  
+    .footer-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  
+    .footer-nav li {
+        margin: 5px;
+    }
+}
+
 /* Flexbox styles for the video and map containers */
 .video-map-container {
     display: flex;
@@ -121,6 +139,58 @@ h2:hover{
     justify-content: center;
 }
 
+/* Media query for screens smaller than 768px (e.g., iPhone 12 mini) */
+@media screen and (max-width: 767px) {
+    .video-map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .actions {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .actions button {
+        margin: 5px;
+    }
+}
+
+/* Media query for screens between 768px and 1199px (e.g., tablets and small desktops) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .video-map-container {
+        flex-wrap: wrap;
+    }
+
+    .video-container {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .map-container {
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+
+    .actions {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .actions button {
+        margin: 5px;
+    }
+}
+
 /* Style breadcrumbs */
 .breadcr {
     margin: 0 auto;
@@ -148,3 +218,4 @@ h2:hover{
     margin: 0 5px 0 12px;
     color: #293D48;
   }
+

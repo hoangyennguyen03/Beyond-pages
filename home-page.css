@@ -155,25 +155,74 @@ video {
     }
 }
 
-/* Horizontal header nav bar for desktop devices */
-@media screen and (min-width: 768px) {
+/* Media Query for Small Screens */
+@media only screen and (max-width: 767px) {
     .menu {
-        float: right; /* Float the menu to the right */
+        flex-wrap: wrap; /* Hide the menu on small screens */
     }
-    .menu ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
+
+    .logo img {
+        width: 50%; /* Adjust the logo size for small screens */
     }
-    .menu li {
-        display: inline-block;
-        margin-left: 20px;
+
+    .actions {
+        margin-left: auto; /* Move the action buttons to the right on small screens */
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Media Query for Medium and Large Screens */
+@media only screen and (min-width: 768px) {
+    .menu {
+        display: flex; /* Show the menu on medium and large screens */
+    }
+
+    .logo img {
+        width: 35%; /* Reset the logo size for medium and large screens */
+    }
+
+    .actions {
+        margin-left: 10px; /* Reset the margin for action buttons on medium and large screens */
     }
 }
 
-/* Resizing header logo for small mobile screens */
-@media screen and (max-width: 480px) {
-    .header-home .logo img {
-        width: 120px;
+@media screen and (max-width: 767px) {
+    /* Navigation bar adjustments */
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #FFFDFB;
+      padding: 10px;
     }
-}
+  
+    .menu li {
+      margin-right: 20px;
+    }
+  
+    .menu li::after {
+      display: none;
+    }
+  
+    /* Product Detail section adjustments */
+    .product-detail {
+      flex-direction: column;
+    }
+  
+    .large-image,
+    .small-images {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .book-details {
+      text-align: center;
+    }
+  
+    .book-price,
+    .add-to-cart-btn {
+      margin-top: 20px;
+    }
+  }

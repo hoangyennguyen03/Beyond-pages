@@ -121,3 +121,17 @@ table td {
 .book img:hover {
     transform: scale(1.1);
 }
+
+/* Media Query for Medium Screens (Tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .book-container {
+        grid-template-columns: repeat(3, 1fr); /* Display 2 books per row */
+    }
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 767px) {
+    .book-container {
+        grid-template-columns: 1fr; /* Display 1 book per row */
+    }
+}

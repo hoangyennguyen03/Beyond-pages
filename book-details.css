@@ -71,6 +71,26 @@
     color: #729068;
     margin-bottom: 15px;
   }
+
+  .book-quantity {
+    margin-bottom: 15px;
+  }
+  
+  .book-quantity label {
+    font-size: 16px;
+    color: #777;
+    margin-right: 10px;
+  }
+  
+  .book-quantity input {
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
   
   .add-to-cart {
     background-color: #729068;
@@ -129,3 +149,34 @@
   }
   }
   
+  /* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .main {
+      flex-wrap: wrap;
+  }
+
+  .book-images {
+      flex-basis: 100%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .small-images {
+      flex-basis: calc(50% - 10px);
+      flex-wrap: wrap;
+      flex-direction: row;
+  }
+
+  
+
+  .book-details {
+      flex-basis: 100%;
+      margin-top: 20px;
+      padding: 10px; /* Add padding for smaller screens */
+  }
+
+  .small-images img {
+      width: 30%;
+      margin-top: 0; /* Remove margin-top for proper spacing */
+  }
+}
