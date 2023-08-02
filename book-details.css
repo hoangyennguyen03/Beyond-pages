@@ -1,9 +1,23 @@
+/*RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Thi Hoang Yen
+ID: s3930002
+Acknowledgement: Acknowledge the resources that you use here.*/
+
+
+body{
+  padding: 50px;
+}
 /* Main Content Styles */
 .main {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-star;
-    flex-wrap: wrap; 
+    background-color: white;
+    border: 2px solid #729068;
+    border-radius: 5px;
+    padding: 50px;
+   
   }
   
   .book-images {
@@ -35,6 +49,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-left: 50px;
 
   }
   
@@ -57,6 +72,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px ;
   }
   
   .book-name {
@@ -111,10 +127,16 @@
   
   /* Book Description Styles */
   .book-description {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     text-align: justify;
+    background-color: white;
+    border: 2px solid #729068;
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   /* Mobile Styles */
@@ -179,4 +201,12 @@
       width: 30%;
       margin-top: 0; /* Remove margin-top for proper spacing */
   }
+}
+
+h3 .breadcr li a {
+  color: #000000;
+}
+
+h3 .breadcr li a:hover {
+  text-decoration: underline;
 }

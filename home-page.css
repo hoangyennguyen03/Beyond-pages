@@ -1,3 +1,11 @@
+/*RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Thi Hoang Yen
+ID: s3930002
+Acknowledgement: Acknowledge the resources that you use here.*/
+
 /* To set the navigation bar */
 nav {
     display: flex;
@@ -67,21 +75,6 @@ nav {
     background-color: #729068; 
     color:#FFFFCC ;
     transform: scale(1.1);
-}
-
-/* Apply styles for video*/
-.video-head {
-    width: 75%;
-    border-radius: 5px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-video {
-    object-fit: contain;
-    overflow-clip-margin: content-box;
-    overflow: clip;
 }
 
 /* Category Section */
@@ -158,17 +151,21 @@ video {
 /* Media Query for Small Screens */
 @media only screen and (max-width: 767px) {
     .menu {
-        flex-wrap: wrap; /* Hide the menu on small screens */
+        display: block;
+    }
+
+    .menu li{
+        margin-right: 0;
+        display: inline-block;
     }
 
     .logo img {
-        width: 50%; /* Adjust the logo size for small screens */
+        width: 50%; 
     }
 
     .actions {
-        margin-left: auto; /* Move the action buttons to the right on small screens */
+        margin-left: auto; 
         display: flex;
-        flex-direction: column;
     }
 
 }

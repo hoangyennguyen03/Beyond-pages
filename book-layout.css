@@ -1,3 +1,11 @@
+/*RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Thi Hoang Yen
+ID: s3930002
+Acknowledgement: Acknowledge the resources that you use here.*/
+
 /* Deal Section */
 .Deal-books {
     padding: 40px 20px;
@@ -21,12 +29,13 @@
 .book {
     flex-basis: calc(33.33% - 20px);
     background-color: #fff;
-    padding: 3px;
+    padding: 5px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .book img {
-    width: 100%;
+    width: 70%;
     height: 220px;
     object-fit: cover;
     border-radius: 4px;
