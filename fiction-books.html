@@ -1,3 +1,4 @@
+<!--Header--> 
 <!--RMIT University Vietnam
 Course: COSC2430 Web Programming
 Semester: 2023A
@@ -12,39 +13,51 @@ Acknowledgement: Acknowledge the resources that you use here.-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiction Categories - Beyond Pages</title>
-    <link rel="shortcut icon" href="images/general/BOOKSTORE-PAGEIMG.png">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="home-page.css">
-    <link rel="stylesheet" href="book-layout.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/general/BOOKSTORE-PAGEIMG.png" type="images/png">
+    
+    <!--External CSS files-->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/book-layout.css">
 </head>
 <body>
     <!-- Header section -->
     <header class="header-home">
+
         <!-- Navigation Bar -->
         <nav>
+            <!--Logo section-->
             <div class="logo">
                 <a href="index.html">
-                <img src="images/general/BEYOND PAGES LOGO.png" alt="Logo">
+                    <img src="images/general/BEYOND PAGES LOGO.png" alt="Logo">
                 </a>
             </div>
-            <div class="menu">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fiction-books.html">Fiction</a></li>
-                <li><a href="non-fiction.html">Non-fiction</a></li>
-                <li><a href="childrenbook.html">Children books</a></li>
-              </ul>
-            </div>
-            <div class="actions">
-              <button class="search-button">Search</button>
-              <button class="sign-up-button">Sign Up</button>
-            </div>
-          </nav>
-    </header><hr>
 
-    <!-- Fiction Categories section -->
-    <section class="category">
-        <!-- breadcrumbs -->
+            <!--Menu section-->
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction-books.html">Fiction</a></li>
+                    <li><a href="non-fiction.html">Non-fiction</a></li>
+                    <li><a href="childrenbook.html">Children books</a></li>
+                </ul>
+            </div>
+
+            <!--Button section-->
+            <div class="actions">
+                <button class="search-button">Search</button>
+                <button class="sign-up-button">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <!-- Fiction Categories section -->
+        <section class="category">
+            <!-- breadcrumbs -->
             <h3><nav aria-label="breadcr">
                 <ol class="breadcr">
                     <li><a href="index.html">Home</a></li>
@@ -52,98 +65,99 @@ Acknowledgement: Acknowledge the resources that you use here.-->
                 </ol>
             </nav></h3>
 
-        <!-- Literary Fiction Sub-category -->
-        <h3>Literary Fiction</h3>
-        <div class="book-container">
-            <!-- Book 1 - The great gastby -->
-            <div class="book">
-                <a href="">
-                <img src="images/fiction/the-great-gatsby.jpg" alt="The the-great-gatsby">
-                    <div class="book-details">
-                        <p class="Cover-book">Hardcover</p>
-                        <p class="book-name">The Great Gastby</p>
-                        <p class="author-name">F. Scott Fitzgerald</p>
-                        <p>Price: 320.000 ₫</p>
-                    </div>
-                </a>
+            <!-- Literary Fiction - Sub-category -->
+            <h3>Literary Fiction</h3>
+            <div class="book-container">
+                <!-- Book 1 - The great gastby -->
+                <div class="book">
+                    <a href="">
+                        <img src="images/fiction/the-great-gatsby.jpg" alt="The the-great-gatsby">
+                        <div class="book-details">
+                            <p class="Cover-book">Hardcover</p>
+                            <p class="book-name">The Great Gastby</p>
+                            <p class="author-name">F. Scott Fitzgerald</p>
+                            <p>Price: 320.000 ₫</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Book 2 - To Kill a Mockingbird -->
+                <div class="book">
+                    <a href="">
+                    <img src="images/fiction/To Kill a Mockingbird book cover.jpg" alt="To kill a Mockingbird">
+                        <div class="book-details">
+                            <p class="Cover-book">Paperback</p>
+                            <p class="book-name">To Kill a Mockingbird</p>
+                            <p class="author-name">Harper Lee</p>
+                            <p>Price: 150.000 ₫</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Book 3 - Literary Fiction -->
+                <div class="book">
+                    <a href="">
+                        <img src="pictures/literary-book3.jpg" alt="Book 3 - Literary Fiction">
+                        <div class="book-details">
+                            <p class="Cover-book">Hardcover</p>
+                            <p class="book-name">Book Title 3</p>
+                            <p class="author-name">Author Name 3</p>
+                            <p>Price: 180.000 ₫</p>
+                        </div>
+                    </a>
+                </div>
             </div>
 
-            <!-- Book 2 - To Kill a Mockingbird -->
-            <div class="book">
-                <a href="">
-                <img src="images/fiction/To Kill a Mockingbird book cover.jpg" alt="To kill a Mockingbird">
-                    <div class="book-details">
-                        <p class="Cover-book">Paperback</p>
-                        <p class="book-name">To Kill a Mockingbird</p>
-                        <p class="author-name">Harper Lee</p>
-                        <p>Price: 150.000 ₫</p>
-                    </div>
-                </a>
-            </div>
+            <!-- Young Adult - Sub-category -->
+            <h3>Young Adult</h3>
+            <div class="book-container">
+                <!-- Book 1 - The Catcher in the Rye -->
+                <div class="book">
+                    <a href="">
+                        <img src="images/fiction/The Catcher in the Rye.jpg" alt="The catcher in the rye">
+                        <div class="book-details">
+                            <p class="Cover-book">Paperback</p>
+                            <p class="book-name">The Catcher in the Rye</p>
+                            <p class="author-name">J.D. Salinger</p>
+                            <p>Price: 199.000 ₫</p>
+                        </div>
+                    </a>
+                </div>
 
-            <!-- Book 3 - Literary Fiction -->
-            <div class="book">
-                <a href="">
-                <img src="pictures/literary-book3.jpg" alt="Book 3 - Literary Fiction">
-                    <div class="book-details">
-                        <p class="Cover-book">Hardcover</p>
-                        <p class="book-name">Book Title 3</p>
-                        <p class="author-name">Author Name 3</p>
-                        <p>Price: 180.000 ₫</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+                <!-- Book 2 - Young Adult -->
+                <div class="book">
+                    <a href="">
+                        <img src="pictures/young-adult-book2.jpg" alt="Book 2 - Young Adult">
+                        <div class="book-details">
+                            <p class="Cover-book">Hardcover</p>
+                            <p class="book-name">Book Title 5</p>
+                            <p class="author-name">Author Name 5</p>
+                            <p>Price: 210.000 ₫</p>
+                        </div>
+                    </a>
+                </div>
 
-        <!-- Young Adult Sub-category -->
-        <h3>Young Adult</h3>
-        <div class="book-container">
-            <!-- Book 1 - The Catcher in the Rye -->
-            <div class="book">
-                <a href="">
-                <img src="images/fiction/The Catcher in the Rye.jpg" alt="The catcher in the rye">
-                    <div class="book-details">
-                        <p class="Cover-book">Paperback</p>
-                        <p class="book-name">The Catcher in the Rye</p>
-                        <p class="author-name">J.D. Salinger</p>
-                        <p>Price: 199.000 ₫</p>
-                    </div>
-                </a>
+                <!-- Book 3 - Young Adult -->
+                <div class="book">
+                    <a href="">
+                        <img src="pictures/young-adult-book3.jpg" alt="Book 3 - Young Adult">
+                        <div class="book-details">
+                            <p class="Cover-book">Paperback</p>
+                            <p class="book-name">Book Title 6</p>
+                            <p class="author-name">Author Name 6</p>
+                            <p>Price: 180.000 ₫</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-
-            <!-- Book 2 - Young Adult -->
-            <div class="book">
-                <a href="">
-                <img src="pictures/young-adult-book2.jpg" alt="Book 2 - Young Adult">
-                    <div class="book-details">
-                        <p class="Cover-book">Hardcover</p>
-                        <p class="book-name">Book Title 5</p>
-                        <p class="author-name">Author Name 5</p>
-                        <p>Price: 210.000 ₫</p>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Book 3 - Young Adult -->
-            <div class="book">
-                <a href="">
-                <img src="pictures/young-adult-book3.jpg" alt="Book 3 - Young Adult">
-                    <div class="book-details">
-                        <p class="Cover-book">Paperback</p>
-                        <p class="book-name">Book Title 6</p>
-                        <p class="author-name">Author Name 6</p>
-                        <p>Price: 180.000 ₫</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer section -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="Images/general/BEYOND PAGES LOGO.png" width="150px" alt="Bookstore Beyond Pages Logo">
+                <img src="Images/general/BEYOND_PAGES_LOGO_2.png" width="150px" alt="Bookstore Beyond Pages Logo">
             </div>
             <div class="footer-nav">
                 <ul>

@@ -152,56 +152,33 @@ body{
 
     }
   
+    .large-image {
+      margin: 0 auto;
+      order: 1;
+    }
+
     .small-images {
-      flex-basis: calc(50% - 10px);
-      flex-wrap: wrap;
+      margin-top: 20px;
+      order:2;
+      flex-basis: calc(40% - 10px);
+      display: flex;
       flex-direction: row;
     }
   
     .book-details {
       flex-basis: 100%;
       margin-top: 20px;
+      padding: 10px;
     }
 
     
     .small-images img {
-    width: 30%;
+    width: 40%;
     max-height: none;
     margin-top: 10px; /* Add some spacing between the small images */
   }
-  }
-  
-  /* Mobile Styles */
-@media screen and (max-width: 768px) {
-  .main {
-      flex-wrap: wrap;
-  }
+ }
 
-  .book-images {
-      flex-basis: 100%;
-      display: flex;
-      flex-wrap: wrap;
-  }
-
-  .small-images {
-      flex-basis: calc(50% - 10px);
-      flex-wrap: wrap;
-      flex-direction: row;
-  }
-
-  
-
-  .book-details {
-      flex-basis: 100%;
-      margin-top: 20px;
-      padding: 10px; /* Add padding for smaller screens */
-  }
-
-  .small-images img {
-      width: 30%;
-      margin-top: 0; /* Remove margin-top for proper spacing */
-  }
-}
 
 h3 .breadcr li a {
   color: #000000;
@@ -210,3 +187,4 @@ h3 .breadcr li a {
 h3 .breadcr li a:hover {
   text-decoration: underline;
 }
+

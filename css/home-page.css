@@ -1,0 +1,345 @@
+/*RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Thi Hoang Yen
+ID: s3930002
+Acknowledgement: Acknowledge the resources that you use here.*/
+
+
+/* To style for header */
+.header-home {
+    background-color: #FFFDFB;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* To set the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFDFB;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 35%;
+}
+
+.menu{
+    flex: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; 
+}
+
+.menu li {
+    margin-right: 20px;
+    position: relative; 
+}
+
+.menu li::after {
+    content: "|"; 
+    position: absolute;
+    top: 50%;
+    right: -15px; 
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.menu li:last-child::after {
+    content: "";
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: #729068;
+}
+
+.actions{
+    display: flex;
+    flex-direction: flex-end;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none; 
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 0px;
+        width: 100%;
+        order: 3; 
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .mobile-nav-icon {
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        font-size: 20px;
+        background-color: #293D48;
+        color: #729068;
+        border-radius: 5px;
+        display: block;
+        order: 2;
+    }
+
+    /* Show the menu when mobile-nav-icon is clicked */
+    .mobile-nav-icon.clicked + .menu {
+        display: flex;
+    }
+
+    /* Secondary Navigation Bar (Mobile) */
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .actions {
+        display: flex;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+}
+
+/* larger screen menu */
+@media screen and (min-width: 768px) {
+    .menu {
+        display: flex;
+        width: auto;
+        order: 2;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu li {
+        text-align: center;
+    }
+
+    .mobile-nav-icon {
+        display: none;
+    }
+
+    .logo {
+        order: 1;
+    }
+    .actions {
+        order: 3;
+    }
+
+}
+/* To style action buttons*/
+.actions button {
+    background-color: #fff;
+    padding: 8px 12px;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.actions button:first-child {
+    margin-left: 0;
+}
+
+.actions button:hover {
+    background-color: #729068; 
+    color:#FFFFCC ;
+    transform: scale(1.1);
+}
+
+/* Category Section */
+.category {
+    margin: 40px 0;
+}
+
+.category h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.category h2 a:hover{
+    color:#729068;
+}
+
+/* Book Containers and Details */
+.category {
+    margin: 40px 0;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.book {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-details {
+    flex: 1;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.book-details .Cover-book {
+    color: #ff5e15;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.book-details .book-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #729068;
+}
+
+.book-details .author-name {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 767px) {
+    /* Product Detail section adjustments */
+    .product-detail {
+      flex-direction: column;
+    }
+  
+    .large-image,
+    .small-images {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .book-details {
+      text-align: center;
+    }
+  
+    .book-price,
+    .add-to-cart-btn {
+      margin-top: 20px;
+    }
+  }
+
+/* Flexbox styles for the video and map containers */
+.video-map-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Apply styles to the video container */
+.video-container {
+    flex-basis: 60%; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply styles to the video element */
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+/* Style the map container */
+.map-container {
+    width:fit-content;
+    flex-basis: 40%; 
+    margin-left: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media query: Video-map container for screens smaller than 768px*/
+@media screen and (max-width: 767px) {
+    .video-map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media query: Video-map container for screens between 768px and 1199px*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .video-map-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .map-container {
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+
+    .video-container {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}

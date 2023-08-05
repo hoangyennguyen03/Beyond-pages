@@ -21,8 +21,7 @@ Acknowledgement: Acknowledge the resources that you use here.*/
 /* Change to a grid layout to make the book containers equal */
 .book-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Divide the available width into 3 equal parts */
-    gap: 20px; /* Add some space between the book containers */
+    grid-template-columns: repeat(3, 1fr);
     padding: 5px;
 }
 
@@ -134,13 +133,13 @@ table td {
 /* Media Query for Medium Screens (Tablet) */
 @media (min-width: 768px) and (max-width: 991px) {
     .book-container {
-        grid-template-columns: repeat(3, 1fr); /* Display 2 books per row */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
 /* Media Query for Small Screens (Mobile) */
 @media (max-width: 767px) {
     .book-container {
-        grid-template-columns: 1fr; /* Display 1 book per row */
+        grid-template-columns: 1fr; 
     }
 }
