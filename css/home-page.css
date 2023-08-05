@@ -107,8 +107,8 @@ nav {
         height: 30px;
         padding: 5px;
         font-size: 20px;
-        background-color: #293D48;
-        color: #729068;
+        background-color:#729068;
+        color: white;
         border-radius: 5px;
         display: block;
         order: 2;
@@ -246,7 +246,7 @@ nav {
 .book-details .book-name {
     font-size: 18px;
     font-weight: bold;
-    color: #729068;
+    color: black;
 }
 
 .book-details .author-name {
@@ -305,8 +305,8 @@ nav {
 
 /* Style the map container */
 .map-container {
-    width:fit-content;
-    flex-basis: 40%; 
+    width:50%;
+    flex-basis: 50%; 
     margin-left: 20px; 
     display: flex;
     align-items: center;

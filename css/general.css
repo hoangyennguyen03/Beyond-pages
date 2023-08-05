@@ -38,11 +38,6 @@ h2 {
     color: black;
 }
 
-h2:hover{
-    color: #729068;
-    text-decoration: underline #FFFFCC;
-}
-
 h3 .breadcr li a {
     color: #000000;
 }
