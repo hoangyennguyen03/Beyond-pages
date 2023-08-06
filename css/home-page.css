@@ -7,19 +7,11 @@ ID: s3930002
 Acknowledgement: Acknowledge the resources that you use here.*/
 
 
-/* To style for header */
-.header-home {
-    background-color: #FFFDFB;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    align-items: center;
-}
 
 /* To set the navigation bar */
 nav {
     display: flex;
+    justify-content: center;
     justify-content: space-between;
     align-items: center;
     background-color: #FFFDFB;
@@ -27,12 +19,23 @@ nav {
     flex-grow: 1;
 }
 
-.logo img {
-    width: 35%;
+.logo {
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 200px; 
+    text-align: center;
 }
 
-.menu{
+.logo img {
+    max-width: 100%;
+    height: auto; 
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu {
     flex: 1;
+    margin-top: 20px;
 }
 
 .menu ul {
@@ -40,19 +43,29 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
 }
 
 .menu li {
     margin-right: 20px;
-    position: relative; 
+    position: relative;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .menu li::after {
-    content: "|"; 
+    content: "|";
     position: absolute;
     top: 50%;
-    right: -15px; 
+    right: -15px;
     transform: translateY(-50%);
     color: #333;
 }
@@ -68,28 +81,51 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu a:hover{
+.menu a:hover {
     text-decoration: underline;
     text-decoration-color: #729068;
 }
 
-.actions{
-    display: flex;
-    flex-direction: flex-end;
+.mobile-nav-icon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #729068;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+    transition: transform 0.2s ease-in-out;
+    margin-left: 70px;
 }
 
-/* Media query for mobile devices */
-@media screen and (max-width: 767px) {
-    .menu {
-        display: none; 
+@media (max-width: 767px) {
+    nav {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
         padding: 5px 0px;
-        width: 100%;
-        order: 3; 
+        text-align: left;
     }
 
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .menu {
+        display: block;
+        max-height: 200px; 
+        transition: max-height 0.3s ease;
+    }
+   
     .menu ul {
         flex-direction: column;
         margin-top: 20px;
@@ -101,106 +137,28 @@ nav {
         font-size: 20px;
     }
 
-    .mobile-nav-icon {
-        text-align: center;
-        width: 30px;
-        height: 30px;
-        padding: 5px;
-        font-size: 20px;
-        background-color:#729068;
-        color: white;
-        border-radius: 5px;
-        display: block;
-        order: 2;
+    .menu li::after {
+        content: none;
     }
 
-    /* Show the menu when mobile-nav-icon is clicked */
-    .mobile-nav-icon.clicked + .menu {
-        display: flex;
-    }
-
-    /* Secondary Navigation Bar (Mobile) */
-    .mobile-nav {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-left: 20px;
-    }
-
-    .actions {
-        display: flex;
-    }
-
-    .logo img {
-        width: 50%;
-    }
-}
-
-/* larger screen menu */
-@media screen and (min-width: 768px) {
     .menu {
-        display: flex;
-        width: auto;
-        order: 2;
-    }
-
-    .menu ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .menu li {
-        text-align: center;
-    }
-
-    .mobile-nav-icon {
         display: none;
     }
 
-    .logo {
-        order: 1;
-    }
-    .actions {
-        order: 3;
+    .mobile-nav-icon {
+        display: block;
     }
 
-}
-/* To style action buttons*/
-.actions button {
-    background-color: #fff;
-    padding: 8px 12px;
-    color: black;
-    border: 1px solid grey;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 10px;
-}
+    .mobile-nav-icon:hover + .menu {
+        display: block;
+    }
 
-.actions button:first-child {
-    margin-left: 0;
-}
+    .menu:hover {
+        display: block;
+        max-height: 300px;
 
-.actions button:hover {
-    background-color: #729068; 
-    color:#FFFFCC ;
-    transform: scale(1.1);
-}
-
-/* Category Section */
-.category {
-    margin: 40px 0;
-}
-
-.category h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.category h2 a:hover{
-    color:#729068;
+    
+    }
 }
 
 /* Book Containers and Details */
@@ -254,29 +212,6 @@ nav {
     color: #777;
     margin-bottom: 10px;
 }
-
-
-@media screen and (max-width: 767px) {
-    /* Product Detail section adjustments */
-    .product-detail {
-      flex-direction: column;
-    }
-  
-    .large-image,
-    .small-images {
-      max-width: 100%;
-      text-align: center;
-    }
-  
-    .book-details {
-      text-align: center;
-    }
-  
-    .book-price,
-    .add-to-cart-btn {
-      margin-top: 20px;
-    }
-  }
 
 /* Flexbox styles for the video and map containers */
 .video-map-container {

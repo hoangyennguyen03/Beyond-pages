@@ -1,75 +1,54 @@
-/*RMIT University Vietnam
-Course: COSC2430 Web Programming
-Semester: 2023A
-Assessment: Assignment 1
-Author: Nguyen Thi Hoang Yen
-ID: s3930002
-Acknowledgement: Acknowledge the resources that you use here.*/
-
 /* Contact Form Styles */
-.main-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .contact-form {
+.contact-form {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     border: 2px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 20px;
     text-align: left;
-  }
-  
-  .form-group label {
+}
+
+.form-group label {
     display: block;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
     width: 100%;
     padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: border-color 0.3s ease;
-  }
-  
-  .form-group select {
-    appearance: none;
-    background: url("images/general/down-arrow.png") no-repeat right center;
-  }
-  
-  .form-group textarea {
-    resize: vertical;
-  }
-  
-  .form-group label,
-  .form-group input[type="checkbox"],
-  .form-group input[type="radio"] {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .form-buttons {
+}
+
+.form-group label,
+.form-group input[type="checkbox"],
+.form-group input[type="radio"] {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-buttons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
-  
-  .form-buttons button {
+}
+
+.form-buttons button {
     background-color: #729068;
     color: #FFFFCC;
     padding: 12px 24px;
@@ -80,31 +59,67 @@ Acknowledgement: Acknowledge the resources that you use here.*/
     cursor: pointer;
     margin-right: 10px;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .form-buttons button:last-child {
+}
+
+.form-buttons button:last-child {
     margin-right: 0;
-  }
-  
-  .form-buttons button:hover {
+}
+
+.form-buttons button:hover {
     background-color: #FFFFCC;
     color: #729068;
     border: 2px solid #729068;
-  }
-  
-  /* Mobile Styles */
-  @media screen and (max-width: 767px) {
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
     .form-group label,
     .form-group input,
     .form-group select,
     .form-group textarea {
-      display: block;
-      width: 100%;
+        display: block;
+        width: 100%;
     }
-  
+
     .form-group input,
     .form-group select,
     .form-group textarea {
-      margin-bottom: 10px;
+        margin-bottom: 10px;
     }
-  }
+}
+
+
+/*Thank-you style*/
+.thank-you-message {
+    text-align: center;
+    background-color: #FFF;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.thank-you-message h1 {
+    color: #729068;
+    margin-bottom: 10px;
+}
+
+.thank-you-message p {
+    margin-bottom: 10px;
+}
+
+.back-to-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #729068;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #8fc393;
+}
+
