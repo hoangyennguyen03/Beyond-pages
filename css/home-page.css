@@ -6,6 +6,21 @@ Author: Nguyen Thi Hoang Yen
 ID: s3930002
 Acknowledgement: Acknowledge the resources that you use here.*/
 
+/* general */
+body {
+    margin: 0 auto;
+    padding: 30px;
+    background: #FFFDFB;
+    font-family: 'Old Standard TT', serif;
+    font-size: 16px;
+    color: black;
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        max-width: 960px;
+    }
+}
 
 
 /* To set the navigation bar */
@@ -21,15 +36,15 @@ nav {
 
 .logo {
     margin: 0 auto;
-    width: 100%; 
-    max-width: 200px; 
+    width: 100%;
+    max-width: 200px;
     text-align: center;
 }
 
 .logo img {
     max-width: 100%;
-    height: auto; 
-    border: 2px solid #ccc;
+    height: auto;
+    border: 2px solid #FFA7E4;
     border-radius: 5px;
 }
 
@@ -45,6 +60,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-around;
+
 }
 
 .menu li {
@@ -59,10 +76,10 @@ nav {
     display: block;
     padding: 10px;
     font-weight: bold;
+    justify-content: space-around;
 }
 
 .menu li::after {
-    content: "|";
     position: absolute;
     top: 50%;
     right: -15px;
@@ -74,16 +91,40 @@ nav {
     content: "";
 }
 
+.menu {
+    font-size: 30px;
+    border: 2px solid #FFA7E4;
+    border-radius: 5px;
+}
+
+.menu ul {
+    border-radius: 5px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #FFF9E2;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFA7E4;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+}
+
 .menu a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu a:hover {
     text-decoration: underline;
-    text-decoration-color: #729068;
+    text-decoration-color: #FFA7E4;
 }
 
 .mobile-nav-icon {
@@ -92,12 +133,11 @@ nav {
     height: 30px;
     padding: 5px;
     font-size: 20px;
-    background-color: #729068;
+    background-color: #FFA7E4;
     color: #fff;
     border-radius: 5px;
     display: none;
     transition: transform 0.2s ease-in-out;
-    margin-left: 70px;
 }
 
 @media (max-width: 767px) {
@@ -122,10 +162,10 @@ nav {
 
     .menu {
         display: block;
-        max-height: 200px; 
+        max-height: 200px;
         transition: max-height 0.3s ease;
     }
-   
+
     .menu ul {
         flex-direction: column;
         margin-top: 20px;
@@ -149,7 +189,7 @@ nav {
         display: block;
     }
 
-    .mobile-nav-icon:hover + .menu {
+    .mobile-nav-icon:hover+.menu {
         display: block;
     }
 
@@ -157,7 +197,7 @@ nav {
         display: block;
         max-height: 300px;
 
-    
+
     }
 }
 
@@ -184,7 +224,7 @@ nav {
 }
 
 .book img {
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
     border-radius: 4px;
 }
@@ -196,7 +236,7 @@ nav {
 }
 
 .book-details .Cover-book {
-    color: #ff5e15;
+    color: #FFA7E4;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -224,7 +264,7 @@ nav {
 
 /* Apply styles to the video container */
 .video-container {
-    flex-basis: 60%; 
+    flex-basis: 60%;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -240,9 +280,9 @@ nav {
 
 /* Style the map container */
 .map-container {
-    width:50%;
-    flex-basis: 50%; 
-    margin-left: 20px; 
+    width: 50%;
+    flex-basis: 50%;
+    margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;

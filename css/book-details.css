@@ -6,186 +6,233 @@ Author: Nguyen Thi Hoang Yen
 ID: s3930002
 Acknowledgement: Acknowledge the resources that you use here.*/
 
-
-body{
-  padding: 50px;
+/*Border of images*/
+.large-images,
+.small-images a {
+    border-radius: 5px;
 }
-/* Main Content Styles */
-.main {
+
+/*Style 3 small images position*/
+.small-images {
     display: flex;
-    background-color: white;
-    border: 2px solid #729068;
-    border-radius: 5px;
-    padding: 50px;
-   
-  }
-  
-  .book-images {
-    flex-basis: 65%;
-    display: flex;
-    flex-wrap: wrap; /* Wrap the book images on smaller screens */
-    justify-content: space-between;
-  }
-  
-  .large-image {
-    flex-basis: 45%;   
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    border: 2px solid #000000;
-    border-radius: 5px;
-  }
-  
-  .large-image img {
+    flex-direction: column;
+}
+
+.small-images a:last-child {
+    margin-right: 0;
+}
+
+.small-images img {
     width: 100%;
-    display: block;
-  }
-  
-  
-  .small-images {
-    flex-basis: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 50px;
-
-  }
-  
-  .small-images img {
-    width: 70%;
-    display: block;
-    border: 2px solid #729068;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #FFA7E4;
     border-radius: 5px;
-  }
+}
 
-  .small-images img:hover{
-    transform: scale(1.4);
-  }
-  
-  
-  .book-details {
-    flex-basis: 35%;
-    text-align: center;
+.large-images {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 50px ;
-  }
-  
-  .book-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color:#000000;
-  }
-  
-  .book-price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #729068;
-    margin-bottom: 15px;
-  }
+    margin-bottom: 20px; 
+    margin-left: 10px;
+}
 
-  .book-quantity {
-    margin-bottom: 15px;
-  }
-  
-  .book-quantity label {
-    font-size: 16px;
-    color: #777;
-    margin-right: 10px;
-  }
-  
-  .book-quantity input {
-    width: 50px;
-    height: 30px;
+.large-images a {
+    flex: 1; 
+}
+
+.large-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #FFA7E4;
+    border-radius: 5px;
+}
+
+/*style the heading 1*/
+.book-informations h1 {
+    font-size: 24px;
+}
+
+/*Style the buttons*/
+.button-group .quantity {
+    display: block;
+    border: none;
+}
+
+.button-group .quantity .select-number {
+    width: 100%;
+    color: #FFF9E2;
+    background-color: #FFA7E4;
+    text-align: left;
     padding: 5px;
-    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+.button-group .submit-button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #FFA7E4;
+    color: #FFF9E2;
+    border: none;
+    margin-left: 20px;
+}
+
+.button-group .submit-button:hover {
+    color: #FFA7E4;
+    background-color: #FFF9E2;
+    border: 2px solid #FFA7E4;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.book-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.book-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: none;
+    justify-content: center;
+}
+
+.book-informations {
+    width: 50%;
+}
+
+.button-group {
+    margin-left: 20px;
+}
+
+/* Styling for the book description */
+.book-description {
+    margin-top: 20px;
+    
+}
+
+/* Styling for the details element  */
+details {
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  
-  .add-to-cart {
-    background-color: #729068;
-    color: #FFFFCC;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
+}
+
+/* Styling for the summary of the details element */
+details summary {
     cursor: pointer;
-  }
+    font-weight: bold;
+    color: #FFA7E4;
+}
 
-  .add-to-cart:hover{
-    background-color: #FFFFCC;
-    color:#729068;
-    border: 2px solid #729068
-  }
-  
-  /* Book Description Styles */
-  .book-description {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: justify;
-    background-color: white;
-    border: 2px solid #729068;
-    border-radius: 5px;
-    padding: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+/* Styling for the content inside the details element (the description itself) */
+details p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
 
-  /* Mobile Styles */
-  @media screen and (max-width: 768px) {
-    .main {
-      flex-wrap: wrap;
+/* Updated CSS for smaller screens (max-width=767px) */
+@media screen and (max-width: 767px) {
+    .book-section {
+        display: flex;
+        flex-direction: column;
     }
-  
+
+    .book-details {
+        flex-wrap: wrap;
+    }
+
     .book-images {
-      flex-basis: 100%;
-      display: flex;
-      flex-wrap: wrap;
-
-    }
-  
-    .large-image {
-      margin: 0 auto;
-      order: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     .small-images {
-      margin-top: 20px;
-      order:2;
-      flex-basis: calc(40% - 10px);
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        flex-direction: row;
+        margin: 0 10px;
+    }
+
+    .small-images a {
+        width: 50%;
+        height: auto;
+    }
+
+    .book-details {
+        width: 100%;
+    }
+
+    .large-images {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .large-images img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Larger screens (min-width=768px) */
+@media screen and (min-width: 768px) {
+    .book-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
   
-    .book-details {
-      flex-basis: 100%;
-      margin-top: 20px;
-      padding: 10px;
+    .book-images {
+        flex: 1 1 10%; 
+        display: flex;
+        flex-direction: row; 
     }
-
+  
+    .small-images {
+        order: 1;
+        flex: 1 1 10%; 
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .small-images {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     
-    .small-images img {
-    width: 40%;
-    max-height: none;
-    margin-top: 10px; /* Add some spacing between the small images */
-  }
- }
-
-
-h3 .breadcr li a {
-  color: #000000;
+    .small-images a {
+        width: 35%;
+        height: auto;
+    }
+    
+  
+    .large-images {
+        order: 2;
+        flex: 1 1 30%; 
+        margin-left: 20px; 
+    }
+  
+    .large-images img {
+        max-width: 100%;
+        height: auto; 
+    }
+      
+    .book-details {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-between;
+    }
 }
-
-h3 .breadcr li a:hover {
-  text-decoration: underline;
-}
-

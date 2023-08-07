@@ -6,7 +6,7 @@ Author: Nguyen Thi Hoang Yen
 ID: s3930002
 Acknowledgement: Acknowledge the resources that you use here.*/
 
-/* Deal Section */
+/* Deal books */
 .Deal-books {
     padding: 40px 20px;
 }
@@ -22,6 +22,7 @@ Acknowledgement: Acknowledge the resources that you use here.*/
 .book-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Added grid gap for spacing between book containers */
     padding: 5px;
 }
 
@@ -31,6 +32,7 @@ Acknowledgement: Acknowledge the resources that you use here.*/
     padding: 5px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    position: relative; /* Added to position the discount label */
 }
 
 .book img {
@@ -41,12 +43,24 @@ Acknowledgement: Acknowledge the resources that you use here.*/
     margin-bottom: 10px;
 }
 
+/* Position the discount label */
+.discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FFA7E4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
 .salebook-details p {
     margin: 0;
 }
 
 .salebook-details .Cover-book {
-    color: #ff5e15;
+    color:#FFA7E4;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -54,7 +68,6 @@ Acknowledgement: Acknowledge the resources that you use here.*/
 .salebook-details .book-name {
     font-size: 18px;
     font-weight: bold;
-    color:#729068;
 }
 
 .salebook-details .author-name {
@@ -92,10 +105,6 @@ table td {
     border-top: 1px solid #ddd;
 }
 
-.Deal-books .book:nth-child(3n) {
-    margin-right: 0;
-}
-
 .price {
     position: relative;
     margin-top: 10px;
@@ -107,15 +116,10 @@ table td {
 }
 
 .new-price {
-    color: #ff5e15;
+    color:#b25596;
     font-weight: bold;
     font-size: 18px;
 }
-
-.discount {
-    position: absolute;
-    top: 0;
-}  
 
 /* Apply transition to book images */
 .book img {
@@ -129,6 +133,7 @@ table td {
 .book img:hover {
     transform: scale(1.1);
 }
+
 
 /* Media Query for Medium Screens (Tablet) */
 @media (min-width: 768px) and (max-width: 991px) {

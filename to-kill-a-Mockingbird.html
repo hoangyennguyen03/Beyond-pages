@@ -1,101 +1,107 @@
-<!--RMIT University Vietnam
-Course: COSC2430 Web Programming
-Semester: 2023A
-Assessment: Assignment 1
-Author: Nguyen Thi Hoang Yen
-ID: s3930002
-Acknowledgement: Acknowledge the resources that you use here.-->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiction | To Kill a Mockingbird </title>
+    <title>Fiction | To Kill a Mockingbird</title>
     <link rel="shortcut icon" href="images/general/BOOKSTORE-PAGEIMG.png">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="home-page.css">
-    <link rel="stylesheet" href="book-layout.css">
-    <link rel="stylesheet" href="book-details.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/book-layout.css">
+    <link rel="stylesheet" href="css/book-details.css">
 
 </head>
+
 <body>
     <!-- Header section -->
     <header class="header-home">
-      <!--Logo section-->
-      <div class="logo">
-         <a href="index.html">
-             <img src="images/general/BEYOND PAGES LOGO.png" alt="Logo">
-         </a>
-     </div>
-     <!-- Navigation Bar -->
-     <nav>
-         <!--Menu section-->
-         <div class="mobile-nav-icon">☰</div>
-         <div class="menu" role="navigation">
-             <ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="fiction-books.html">Fiction</a></li>
-                 <li><a href="non-fiction.html">Non-fiction</a></li>
-                 <li><a href="childrenbook.html">Children books</a></li>
-             </ul>
-         </div>
-     </nav>
- </header>
- <hr>
+        <!--Logo section-->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/general/BEYOND-PAGES-LOGO-pink.png" alt="Logo">
+            </a>
+        </div>
+        <!-- Navigation Bar -->
+        <nav>
+            <!--Menu section-->
+            <div class="mobile-nav-icon">☰</div>
+            <div class="menu" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction-books.html">Fiction</a></li>
+                    <li><a href="non-fiction.html">Non-fiction</a></li>
+                    <li><a href="childrenbook.html">Children books</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr>
 
-    <!-- breadcrumbs -->
-    <h2><nav aria-label="breadcr">
-        <ol class="breadcr">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="fictionbooks.html">Fiction</a></li>
-            <li>To Kill a Mockingbird</li>
-        </ol>
-    </nav></h2>
+    <!--Main content of detail books-->
+    <main>
+        <div class="book-section">
+            <!--image section-->
+            <div class="book-images">
+                <!--large image-->
+                <div class="large-images">
+                    <a href="images/fiction/to-kill-a-mockingbird.jpg"><img src="images/fiction/to-kill-a-mockingbird.jpg" alt="cover image of To Kill a Mockingbird"></a>
+                </div>
+                <!--small image-->
+                <div class="small-images">
+                    <a href="images/fiction/to_kill_a_mockingbird__1.jpg"><img src="images/fiction/to_kill_a_mockingbird__1.jpg" alt="book image 1"></a>
+                    <a href="images/fiction/to_kill_a_mockingbird__2.jpg"><img src="images/fiction/to_kill_a_mockingbird__2.jpg" alt="book image 2"></a>
+                    <a href="images/fiction/to_kill_a_mockingbird__3.jpg"><img src="images/fiction/to_kill_a_mockingbird__3.jpg" alt="book image 3"></a>
+                </div>
+            </div>
+            <div class="book-details">
+                <!--book information-->
+                <div class="book-informations">
+                    <h1>To Kill A Mockingbird</h1>
+                    <p class="Cover-book">Paperback</p>
+                    <p class="author-name">Harper Lee</p>
+                    <p class="book-price">150.000₫</p </div>
+                    
+                    <!--button group-->
+                    <div class="button-group">
+                        <div class="quantity">
+                            <label for="prod-quantity">Quantity:</label><br>
+                            <select class="select-number" name="prod-quantity" id="prod-quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
 
-    <!-- Main Content -->
-  <main class="main">
-    <div class="book-images">
-      <!-- Small Book Images -->
-      <div class="small-images">
-        <img src="images/fiction/to_kill_a_mockingbird__1.jpg" alt="Small Book 1">
-        <img src="images/fiction/to_kill_a_mockingbird__2.jpg" alt="Small Book 2">
-        <img src="images/fiction/to_kill_a_mockingbird__3.jpg" alt="Small Book 3">
-      </div>
+                        <!--add-to-cart button-->
+                        <button class="submit-button" type="submit">Add to cart</button>
+                    </div>
 
-      <!-- Large Book Image -->
-      <div class="large-image">
-        <img src="images/fiction/To Kill a Mockingbird book cover.jpg" alt="Large Book">
-      </div>
-    </div>
-
-    <div class="book-details">
-      <h1 class="book-name">To Kill a Mockingbird</h1>
-      <p class="book-price">150.000₫</p>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-  </main>
-
-  <!-- Book Description -->
-  <section class="book-description">
-    <h2>Description</h2>
-    <p>
-        To Kill a Mockingbird, novel by American author Harper Lee, published in 1960. Enormously popular, it was translated into some 40 languages, sold more than 40 million copies worldwide, and is one of the most-assigned novels in American schools. In 1961 it won a Pulitzer Prize. The novel was praised for its sensitive treatment of a child’s awakening to racism and prejudice in the American South.
-    </p>
-  </section>
+                    <!--decription section-->
+                    <div class="book-description">
+                        <details>
+                            <summary>Description</summary>
+                            <p>'Shoot all the Bluejays you want, if you can hit 'em, but remember it's a sin to kill a Mockingbird.'
+                            Lawyer Atticus Finch gives this advice to his children as he defends the real mockingbird of Harper Lee's classic novel - a black man charged with the rape of a white girl. Through the young eyes of Scout and Jem Finch, Harper Lee explores with exuberant humour the irrationality of adult attitudes to race and class in the Deep South of the 1930s.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!--Footer section -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="images/general/BEYOND PAGES LOGO.png" width="150px" alt="Bookstore Beyond Pages Logo">
+                <img src="images/general/BEYOND-PAGES-LOGO-pink.png" width="150px" alt="Bookstore Beyond Pages Logo">
             </div>
             <div class="footer-nav">
                 <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms</a></li>
-                    <li><a href="#">Copyright</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -110,4 +116,5 @@ Acknowledgement: Acknowledge the resources that you use here.-->
         </div>
     </footer>
 </body>
+
 </html>
