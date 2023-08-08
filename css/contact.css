@@ -65,6 +65,16 @@
     margin-right: 0;
 }
 
+.form-buttons .submit-button a{
+    text-decoration: none;
+    color: #FFF9E2;
+}
+
+.form-buttons .submit-button a:hover{
+    background-color: #FFF9E2;
+    color: #FFA7E4;
+}
+
 .form-buttons button:hover {
     background-color: #FFF9E2;
     color:#FFA7E4;

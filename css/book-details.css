@@ -16,6 +16,9 @@ Acknowledgement: Acknowledge the resources that you use here.*/
 .small-images {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .small-images a:last-child {
@@ -37,6 +40,7 @@ Acknowledgement: Acknowledge the resources that you use here.*/
     justify-content: center;
     margin-bottom: 20px; 
     margin-left: 10px;
+    align-items: center;
 }
 
 .large-images a {
@@ -191,6 +195,9 @@ details p {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
     }
   
     .book-images {

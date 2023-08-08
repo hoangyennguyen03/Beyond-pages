@@ -162,13 +162,13 @@ nav {
 
     .menu {
         display: block;
-        max-height: 200px;
+        max-height: 300px;
         transition: max-height 0.3s ease;
     }
 
     .menu ul {
         flex-direction: column;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
 
     .menu li {

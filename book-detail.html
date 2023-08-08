@@ -1,11 +1,24 @@
+<!--Header-->
+<!--RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Thi Hoang Yen
+ID: s3930002
+Acknowledgement: Acknowledge the resources that you use here.-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiction | The Great Gatsby</title>
-    <link rel="shortcut icon" href="images/general/BOOKSTORE-PAGEIMG.png">
+    <title>Children's Book | Green Eggs And Ham: A Magnetic Play Book</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/general/BEYOND-PAGES-LOGO-pink.png" type="images/png">
+
+    <!--External CSS files-->
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/home-page.css">
     <link rel="stylesheet" href="css/book-layout.css">
@@ -40,53 +53,67 @@
 
     <!--Main content of detail books-->
     <main>
-        <div class="book-section">
-            <!--image section-->
-            <div class="book-images">
-                <!--large image-->
-                <div class="large-images">
-                    <a href="#"><img src="images/" alt="cover image"></a>
+        <!-- Fiction Categories section -->
+        <section class="category">
+            <!-- breadcrumbs -->
+            <h3>
+                <nav aria-label="breadcr">
+                    <ol class="breadcr">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li>Book's name</li>
+                    </ol>
+                </nav>
+            </h3>
+            <div class="book-section">
+                <!--image section-->
+                <div class="book-images">
+                    <!--large image-->
+                    <div class="large-images">
+                        <a href="images/"><img src="images/"alt="cover image of "></a>
+                    </div>
+                    <!--small image-->
+                    <div class="small-images">
+                        <a href="images/"><img src="images/" alt="image 1 of "></a>
+                        <a href="images/"><img src="images/" alt="image 2 of "></a>
+                        <a href="images/"><img src="images/" alt="image 3 of "></a>
+                    </div>
                 </div>
-                <!--small image-->
-                <div class="small-images">
-                    <a href="#"><img src="images/" alt="book image 1"></a>
-                    <a href="#"><img src="images/" alt="book image 2"></a>
-                    <a href="#"><img src="images/" alt="book image 3"></a>
-                </div>
-            </div>
-            <div class="book-details">
-                <!--book information-->
-                <div class="book-informations">
-                    <h1>title</h1>
-                    <p class="Cover-book">Paperback</p>
-                    <p class="book-name">Name</p>
-                    <p class="author-name">Athor</p>
-                    <p class="book-price">0.000</p </div>
-                    
-                    <!--button group-->
-                    <div class="button-group">
-                        <div class="quantity">
-                            <label for="prod-quantity">Quantity:</label><br>
-                            <select class="select-number" name="prod-quantity" id="prod-quantity">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
+                <div class="book-details">
+                    <!--book information-->
+                    <div class="book-informations">
+                        <h1>Book</h1>
+                        <p class="Cover-book">Cover</p>
+                        <p class="author-name">Author</p>
+                        <p class="book-price">0 ₫</p 
                         </div>
 
-                        <!--add-to-cart button-->
-                        <button class="submit-button" type="submit">Add to cart</button>
-                    </div>
+                        <!-- button group-->
+                        <div class="button-group">
+                            <div class="quantity">
+                                <label for="prod-quantity">Quantity:</label><br>
+                                <select class="select-number" name="prod-quantity" id="prod-quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
 
-                    <!--decription section-->
-                    <div class="book-description">
-                        <details>
-                            <summary>Description</summary>
-                            <p></p>
-                        </details>
+                            <!--add-to-cart button-->
+                            <button class="submit-button" type="submit">Add to cart</button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!--decription section-->
+        <div class="book-description">
+            <details>
+                <summary>Description</summary>
+                <p>
+                    
+                </p>
+            </details>
         </div>
     </main>
 
