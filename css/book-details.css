@@ -187,6 +187,11 @@ details p {
         max-width: 100%;
         height: auto;
     }
+
+    .discount {
+        font-size: 12px; 
+        padding: 2px; 
+    }
 }
 
 /* Larger screens (min-width=768px) */

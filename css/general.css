@@ -10,6 +10,7 @@ Acknowledgement: Acknowledge the resources that you use here.*/
 body{
     background-color: #FFFDFB;
     padding: 0 20px;
+    margin: 0 auto;
 }
 
 /*Set heading 1 style*/
@@ -44,6 +45,13 @@ h2 {
 
 .category h2 a:hover{
     color: #FFA7E4;
+}
+h3 a{
+    text-decoration: none;   
+}
+
+h3 a:hover{
+    color:#FFA7E4;
 }
 
 h3 .breadcr li a {
@@ -138,23 +146,34 @@ h3 .breadcr li a:hover {
     list-style: none;
   }
   
-  .breadcr li {
+.breadcr li {
     display: inline-block;
     color: #FFA7E4;
 
   }
   
-  .breadcr li a {
+.breadcr li a {
     color:  #FFA7E4;
     text-decoration: none;
   }
-  .breadcr li:last-child {
+.breadcr li:last-child {
     text-decoration: underline;
   }
 
-  .breadcr li:not(:last-child):after {
+.breadcr li:not(:last-child):after {
     content: ">";
     margin: 0 5px 0 12px;
     color:  #FFA7E4;
   }
+
+
+/*Style the background picture*/
+
+.cat-background img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
 

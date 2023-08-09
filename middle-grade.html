@@ -1,0 +1,138 @@
+<!--RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Thi Hoang Yen
+ID: s3930002
+Acknowledgement: Acknowledge the resources that you use here.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Grade | Beyond Pages</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/general/BEYOND-PAGES-LOGO-pink.png" type="images/png">
+
+    <!--External CSS files-->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/book-layout.css">
+
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header class="header-home">
+        <!--Logo section-->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/general/BEYOND-PAGES-LOGO-pink.png" alt="Logo">
+            </a>
+        </div>
+        <!-- Navigation Bar -->
+        <nav>
+            <!--Menu section-->
+            <div class="mobile-nav-icon">☰</div>
+            <div class="menu" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction-books.html">Fiction</a></li>
+                    <li><a href="non-fiction.html">Non-fiction</a></li>
+                    <li><a href="childrenbook.html">Children books</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cat-background">
+            <img src="images/childrenbooks/middle-grade-background.jpeg" alt="middle grade background">
+        </div>
+        <!-- Children's book Categories section -->
+        <section class="category">
+            <!-- breadcrumbs -->
+            <h3>
+                <nav aria-label="breadcr">
+                    <ol class="breadcr">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="childrenbook.html">Children's Books</a></li>
+                        <li>Middle Grade</li>
+                    </ol>
+                </nav>
+            </h3>
+
+            <!-- Middle grade Sub-category -->
+            <div class="book-container">
+                <!-- Book 1 - Wonder -->
+                <div class="book">
+                    <a href="wonder.html">
+                        <img src="images/childrenbooks/Wonder.jpg" alt="Wonder">
+                        <div class="book-details">
+                            <p class="Cover-book">Paperback</p>
+                            <p class="book-name">Wonder</p>
+                            <p class="author-name">R. J. Palacio</p>
+                            <p>Price: 169.000 ₫</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Book 2 -Diary of a Wimpy Kid -->
+                <div class="book">
+                    <a href="diary-of-a-wimpy-kid.html">
+                        <img src="images/childrenbooks/diary-of-a-wimpy-kid.jpg" alt="Diary of a Wimpy Kid">
+                        <div class="book-details">
+                            <p class="Cover-book">HARDCOVER</p>
+                            <p class="book-name">Diary of a Wimpy Kid</p>
+                            <p class="author-name">Jeff Kinney</p>
+                            <p>Price: 875.000 ₫</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Book 3 - Charlie And The Chocolate Factory  -->
+                <div class="book">
+                    <a href="charlie-and-the-chocolate-factory.html">
+                        <img src="images/childrenbooks/charlie-and-the-chocolate-factory.jpg" alt="Book 3 - Charlie And The Chocolate Factory ">
+                        <div class="book-details">
+                            <p class="Cover-book">Paperback</p>
+                            <p class="book-name">Charlie And The Chocolate Factory </p>
+                            <p class="author-name">Roald Dahl </p>
+                            <p>Price: 60.000 ₫</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/general/BEYOND-PAGES-LOGO-pink.png" width="150px" alt="Bookstore Beyond Pages Logo">
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/"><img src="Images/general/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com/"><img src="Images/general/twitter-icon.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/"><img src="Images/general/instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Beyond Pages. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
