@@ -249,3 +249,11 @@ details p {
     }
 
 }
+
+.small-images a img {
+    transition: transform 0.3s ease;
+}
+
+.small-images a:hover img {
+    transform: scale(1.4);
+}

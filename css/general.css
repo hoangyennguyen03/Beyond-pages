@@ -13,6 +13,20 @@ body{
     margin: 0 auto;
 }
 
+/*Set the general font*/
+body {
+    font-family: "Open Sans", sans-serif;
+
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+nav ul li {
+    font-family: "Open Sans", sans-serif;
+}
+
 /*Set heading 1 style*/
 h1{
     text-align: center;
