@@ -135,7 +135,7 @@ h3 .breadcr li a:hover {
     color:#FFA7E4;
 }
 
-/* Media Query for Smaller Screens */
+/* Media Query for Mobile Screens */
 @media screen and (max-width: 767px) {
     .footer-container {
         flex-direction: column;
